@@ -7,14 +7,14 @@
    1. CONFIGURAÇÃO GERAL
    ========================================= */
 // ✅ Apenas números (sem +, sem espaços)
-const whatsappNumber = "552231992504";
+const whatsappNumber = "11985509680";
 
 // Mensagem padrão
 const defaultMessage = "Olá, gostaria de iniciar meu atendimento.";
 
 // Monta URL padrão
 function buildWhatsUrl(text = defaultMessage) {
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${11985509680}?text=${encodeURIComponent(text)}`;
 }
 
 const whatsappUrl = buildWhatsUrl();
@@ -421,4 +421,5 @@ window.handleLogin = handleLogin;
 window.scrollToTop = scrollToTop;
 window.changeSlide = changeSlide;
 window.acceptCookies = acceptCookies;
+
 
