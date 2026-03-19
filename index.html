@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maciel Transportes & Mudanças</title>
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg,#0d47a1,#1976d2);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* NAV */
+nav {
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin:0 15px;
+    text-decoration:none;
+    color:#0d47a1;
+    font-weight:bold;
+}
+
+/* CONTAINER */
+.container {
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* SERVIÇOS */
+.services {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+form {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+form input, form textarea, form select {
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+form button {
+    background:#0d47a1;
+    color:white;
+    padding:12px;
+    border:none;
+    margin-top:15px;
+    width:100%;
+    border-radius:6px;
+}
+
+/* FOOTER */
+footer {
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+    line-height:1.6;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.whatsapp img {
+    width:60px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Maciel Transportes & Mudanças</h1>
+    <p>Segurança, agilidade e confiança na sua mudança</p>
+</header>
+
+<nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#quem">Quem Somos</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="#privacidade">Privacidade</a>
+</nav>
+
+<div class="container" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Mudanças Residenciais</h3>
+            <p>Transporte completo com cuidado e segurança.</p>
+        </div>
+        <div class="card">
+            <h3>Mudanças Comerciais</h3>
+            <p>Atendimento rápido para empresas.</p>
+        </div>
+        <div class="card">
+            <h3>Interestadual</h3>
+            <p>Atendemos todo o Brasil.</p>
+        </div>
+        <div class="card">
+            <h3>Montagem de Móveis</h3>
+            <p>Equipe especializada.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="quem">
+    <h2>Quem Somos</h2>
+    <p>
+        A Maciel Transportes & Mudanças atua no transporte rodoviário com responsabilidade,
+        pontualidade e compromisso com seus clientes.
+    </p>
+    <p><strong>CNPJ:</strong> 57.416.880/0001-07</p>
+</div>
+
+<div class="container" id="orcamento">
+    <h2>Solicitar Orçamento</h2>
+
+    <form onsubmit="enviarWhats(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="text" id="telefone" placeholder="Telefone" required>
+        <input type="text" id="origem" placeholder="Origem" required>
+        <input type="text" id="destino" placeholder="Destino" required>
+        <textarea id="detalhes" placeholder="Detalhes da mudança"></textarea>
+        <button type="submit">Enviar Orçamento</button>
+    </form>
+</div>
+
+<div class="container" id="privacidade">
+    <h2>Política de Privacidade</h2>
+    <p>
+        Esta política descreve como coletamos e utilizamos as informações fornecidas pelos usuários.
+    </p>
+    <p>
+        Coletamos dados como nome, telefone e informações da mudança apenas para fins de contato
+        e elaboração de orçamento.
+    </p>
+    <p>
+        Não compartilhamos seus dados com terceiros, exceto quando necessário para prestação de serviço
+        ou exigido por lei.
+    </p>
+    <p>
+        Ao utilizar este site, você concorda com esta política.
+    </p>
+
+    <h2>Termos de Uso</h2>
+    <p>
+        Ao acessar este site, você concorda em utilizar as informações apenas para fins legais.
+    </p>
+    <p>
+        Os serviços oferecidos estão sujeitos à disponibilidade e confirmação.
+    </p>
+    <p>
+        A empresa não se responsabiliza por informações incorretas fornecidas pelo usuário.
+    </p>
+</div>
+
+<footer>
+    <p><strong>Maciel Transportes & Mudanças</strong></p>
+    <p>Francisco Maciel Leite de Oliveira</p>
+    <p>CNPJ: 57.416.880/0001-07</p>
+    <p>
+        R. Alfredo Reimberg, 505<br>
+        LT São Pedro<br>
+        São Paulo - SP<br>
+        CEP: 04866-003<br>
+        Brasil
+    </p>
+    <p>© 2026 Todos os direitos reservados</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/SEUNUMERO" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script>
+function enviarWhats(e){
+e.preventDefault();
+
+let nome = document.getElementById("nome").value;
+let telefone = document.getElementById("telefone").value;
+let origem = document.getElementById("origem").value;
+let destino = document.getElementById("destino").value;
+
+let msg = `Olá, gostaria de um orçamento%0A` +
+`Nome: ${nome}%0A` +
+`Telefone: ${telefone}%0A` +
+`Origem: ${origem}%0A` +
+`Destino: ${destino}`;
+
+window.open("https://wa.me/SEUNUMERO?text="+msg);
+}
+</script>
+
+</body>
+</html>
