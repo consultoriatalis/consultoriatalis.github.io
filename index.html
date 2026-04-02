@@ -1,234 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maciel Transportes & Mudanças</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talis Emanuel - Coleta de Resíduos</title>
+    <style>
+        /* Estilos Gerais */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: #333; background-color: #f4f4f4; }
+        
+        /* Cabeçalho e Navegação */
+        header { background: #2d5a27; color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: auto; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #a8e0a3; }
 
-<style>
-* {margin:0;padding:0;box-sizing:border-box;}
+        /* Seções */
+        section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=1000') no-repeat center center/cover; color: white; text-align: center; padding: 100px 20px; }
+        
+        h2 { border-bottom: 3px solid #2d5a27; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; }
+        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1-fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #2d5a27; }
 
-body {
-    font-family: Arial, sans-serif;
-    background:#f5f7fa;
-}
+        /* Rodapé */
+        footer { background: #222; color: #ccc; padding: 40px 20px; text-align: center; font-size: 0.9rem; }
+        footer strong { color: white; }
+        .footer-info { margin-bottom: 10px; }
 
-/* HEADER */
-header {
-    background: linear-gradient(135deg,#0d47a1,#1976d2);
-    color:white;
-    padding:60px 20px;
-    text-align:center;
-}
-
-/* NAV */
-nav {
-    background:white;
-    padding:15px;
-    text-align:center;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav a {
-    margin:0 15px;
-    text-decoration:none;
-    color:#0d47a1;
-    font-weight:bold;
-}
-
-/* CONTAINER */
-.container {
-    max-width:1100px;
-    margin:40px auto;
-    padding:20px;
-}
-
-/* SERVIÇOS */
-.services {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card {
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-/* FORM */
-form {
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-form input, form textarea, form select {
-    width:100%;
-    padding:12px;
-    margin-top:10px;
-    border-radius:6px;
-    border:1px solid #ccc;
-}
-
-form button {
-    background:#0d47a1;
-    color:white;
-    padding:12px;
-    border:none;
-    margin-top:15px;
-    width:100%;
-    border-radius:6px;
-}
-
-/* FOOTER */
-footer {
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:25px;
-    line-height:1.6;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-}
-
-.whatsapp img {
-    width:60px;
-}
-</style>
-
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav ul { margin-top: 15px; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Maciel Transportes & Mudanças</h1>
-    <p>Segurança, agilidade e confiança na sua mudança</p>
-</header>
+    <header>
+        <nav>
+            <div class="logo">TALIS EMANUEL</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#privacidade">Privacidade</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#servicos">Serviços</a>
-    <a href="#quem">Quem Somos</a>
-    <a href="#orcamento">Orçamento</a>
-    <a href="#privacidade">Privacidade</a>
-</nav>
-
-<div class="container" id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Mudanças Residenciais</h3>
-            <p>Transporte completo com cuidado e segurança.</p>
-        </div>
-        <div class="card">
-            <h3>Mudanças Comerciais</h3>
-            <p>Atendimento rápido para empresas.</p>
-        </div>
-        <div class="card">
-            <h3>Interestadual</h3>
-            <p>Atendemos todo o Brasil.</p>
-        </div>
-        <div class="card">
-            <h3>Montagem de Móveis</h3>
-            <p>Equipe especializada.</p>
-        </div>
+    <div class="hero" id="home">
+        <h1>Soluções em Coleta de Resíduos</h1>
+        <p>Compromisso ambiental e eficiência em Taquaritinga do Norte e região.</p>
     </div>
-</div>
 
-<div class="container" id="quem">
-    <h2>Quem Somos</h2>
-    <p>
-        A Maciel Transportes & Mudanças atua no transporte rodoviário com responsabilidade,
-        pontualidade e compromisso com seus clientes.
-    </p>
-    <p><strong>CNPJ:</strong> 57.416.880/0001-07</p>
-</div>
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>A <strong>61.261.959 TALIS EMANUEL DE ASSUNCAO SILVA</strong> é uma empresa dedicada à gestão responsável de materiais. Localizada em Pernambuco, atuamos com foco na coleta de resíduos não-perigosos, garantindo que o descarte dos nossos clientes seja feito de forma ética, segura e em total conformidade com as normas ambientais vigentes.</p>
+    </section>
 
-<div class="container" id="orcamento">
-    <h2>Solicitar Orçamento</h2>
+    <section id="servicos" style="background: #e9ecef; max-width: 100%;">
+        <div style="max-width: 1000px; margin: auto;">
+            <h2>Nossos Serviços</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Coleta Residencial</h3>
+                    <p>Remoção programada de resíduos domésticos comuns com pontualidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Coleta Comercial</h3>
+                    <p>Gestão de resíduos para empresas e comércios locais de pequeno e médio porte.</p>
+                </div>
+                <div class="card">
+                    <h3>Transporte Seguro</h3>
+                    <p>Movimentação de materiais não-perigosos para unidades de tratamento ou reciclagem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <form onsubmit="enviarWhats(event)">
-        <input type="text" id="nome" placeholder="Seu nome" required>
-        <input type="text" id="telefone" placeholder="Telefone" required>
-        <input type="text" id="origem" placeholder="Origem" required>
-        <input type="text" id="destino" placeholder="Destino" required>
-        <textarea id="detalhes" placeholder="Detalhes da mudança"></textarea>
-        <button type="submit">Enviar Orçamento</button>
-    </form>
-</div>
+    <section id="privacidade">
+        <h2>Políticas de Privacidade</h2>
+        <p>A proteção dos seus dados é importante para nós. Esta política descreve como tratamos informações:</p>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+            <li>Coletamos apenas dados necessários para a prestação de serviços de coleta e faturamento.</li>
+            <li>Não compartilhamos informações com terceiros sem autorização prévia, exceto por obrigatoriedade legal.</li>
+            <li>Garantimos o armazenamento seguro de qualquer dado cadastral fornecido via canais de atendimento.</li>
+        </ul>
+    </section>
 
-<div class="container" id="privacidade">
-    <h2>Política de Privacidade</h2>
-    <p>
-        Esta política descreve como coletamos e utilizamos as informações fornecidas pelos usuários.
-    </p>
-    <p>
-        Coletamos dados como nome, telefone e informações da mudança apenas para fins de contato
-        e elaboração de orçamento.
-    </p>
-    <p>
-        Não compartilhamos seus dados com terceiros, exceto quando necessário para prestação de serviço
-        ou exigido por lei.
-    </p>
-    <p>
-        Ao utilizar este site, você concorda com esta política.
-    </p>
-
-    <h2>Termos de Uso</h2>
-    <p>
-        Ao acessar este site, você concorda em utilizar as informações apenas para fins legais.
-    </p>
-    <p>
-        Os serviços oferecidos estão sujeitos à disponibilidade e confirmação.
-    </p>
-    <p>
-        A empresa não se responsabiliza por informações incorretas fornecidas pelo usuário.
-    </p>
-</div>
-
-<footer>
-    <p><strong>Maciel Transportes & Mudanças</strong></p>
-    <p>Francisco Maciel Leite de Oliveira</p>
-    <p>CNPJ: 57.416.880/0001-07</p>
-    <p>
-        R. Alfredo Reimberg, 505<br>
-        LT São Pedro<br>
-        São Paulo - SP<br>
-        CEP: 04866-003<br>
-        Brasil
-    </p>
-    <p>© 2026 Todos os direitos reservados</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/SEUNUMERO" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
-
-<script>
-function enviarWhats(e){
-e.preventDefault();
-
-let nome = document.getElementById("nome").value;
-let telefone = document.getElementById("telefone").value;
-let origem = document.getElementById("origem").value;
-let destino = document.getElementById("destino").value;
-
-let msg = `Olá, gostaria de um orçamento%0A` +
-`Nome: ${nome}%0A` +
-`Telefone: ${telefone}%0A` +
-`Origem: ${origem}%0A` +
-`Destino: ${destino}`;
-
-window.open("https://wa.me/SEUNUMERO?text="+msg);
-}
-</script>
+    <footer>
+        <div class="footer-info">
+            <strong>61.261.959 TALIS EMANUEL DE ASSUNCAO SILVA</strong><br>
+            CNPJ: 61.261.959/0001-75<br>
+            Localização: Taquaritinga do Norte, Pernambuco (PE)
+        </div>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
